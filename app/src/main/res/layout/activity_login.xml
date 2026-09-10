@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="👤"
+        android:textSize="56sp"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iniciar sesión"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_on_dark"
+        android:layout_marginBottom="32dp" />
+
+    <EditText
+        android:id="@+id/etLoginUsername"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/bg_input_field"
+        android:hint="Usuario"
+        android:textColorHint="@color/text_hint"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:layout_marginBottom="12dp"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/etLoginPassword"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/bg_input_field"
+        android:hint="Contraseña"
+        android:textColorHint="@color/text_hint"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:layout_marginBottom="8dp"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/tvLoginError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/error_red"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/bg_button"
+        android:text="INGRESAR"
+        android:textColor="@color/text_on_dark"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/btnGoToRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="¿No tienes cuenta? Regístrate"
+        android:textColor="@color/text_on_dark"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
